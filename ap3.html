@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP3</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>TESTE DE CONHECIMENTO - COVID-19</h1>
+    </header>
+    <section>
+        <div class="tela-inicial caixa-inicial"> 
+            <img src="img/1-virus.jpg" alt="imagem-virus">
+            <h3>Teste seu conhecimento sobre a COVID-19!</h3>
+            <p>Total de perguntas: <span class="total-perguntas">10</span></p>
+            <button type="button" class="botao" onclick="iniciarQuiz()">Iniciar o Quiz</button>
+        </div>
+
+        <div class="quiz caixa-inicial  ocultar">
+            <div class="perguntas-n">
+            </div>
+            <div class="perguntas-t">
+            </div>
+            <div class="opcao-container">
+            </div>
+            <div class="botao-proximo">
+                <button type="button" class="botao" onclick="proximo()">Próximo</button>
+            </div>
+            <div class="resposta">
+            </div>
+        </div>
+
+        <div class=" quiz tela-resultado caixa-inicial ocultar"> 
+            <h1>Resultado do Quiz</h1>
+            <table>
+                <tr>
+                    <td>Total de Questões</td>
+                    <td><span class="total-questoes"></span></td>
+                </tr>
+                <tr>
+                    <td>Tentativas</td>
+                    <td><span class="total-tentativas"></span></td>
+                </tr>
+                <tr>
+                    <td>Corretas</td>
+                    <td><span class="total-corretas"></span></td>
+                </tr>
+                <tr>
+                    <td>Erradas</td>
+                    <td><span class="total-erradas"></span></td>
+                </tr>
+                <tr>
+                    <td>Percentual</td>
+                    <td><span class="porcento"></span></td>
+                </tr>
+                <tr>
+                    <td>Pontuação Total</td>
+                    <td><span class="total-pontuacao"></span></td>
+                </tr>               
+            </table>
+            <button type="button" class="botao" onclick="tenteNovamenteQuiz()">Tente Novamente</button>
+            <button type="button" class="botao" onclick="finalizarQuiz()">Finalizar o Quiz</button>
+        </div>
+
+    </section>
+    <footer>
+        <p>&copy;Site desenvolvido por Gabriele Oliveira Gonçalves</p>
+    </footer>
+    
+    <script src="quiz-script.js"></script>
+    <script src="quiz-telas.js"></script>
+</body>
+</html>
